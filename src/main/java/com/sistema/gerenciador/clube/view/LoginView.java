@@ -5,12 +5,6 @@
 package com.sistema.gerenciador.clube.view;
 
 import com.sistema.gerenciador.clube.controller.LoginController;
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import javax.imageio.*;
-import javax.swing.ImageIcon;
 
 /**
  *
@@ -41,8 +35,8 @@ public class LoginView extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
-        jTextField21 = new javax.swing.JTextField();
-        jTextField24 = new javax.swing.JTextField();
+        jTLogin = new javax.swing.JTextField();
+        jTSenha = new javax.swing.JTextField();
         jPEntrar = new javax.swing.JPanel();
         jLEntrar = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -71,20 +65,20 @@ public class LoginView extends javax.swing.JFrame {
         jSeparator2.setToolTipText("");
         jSeparator2.setFont(new java.awt.Font("Segoe UI", 0, 3)); // NOI18N
 
-        jTextField21.setBackground(new java.awt.Color(59, 57, 57));
-        jTextField21.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField21.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField21.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
-        jTextField21.setMargin(new java.awt.Insets(10, 6, 2, 6));
-        jTextField21.setOpaque(true);
+        jTLogin.setBackground(new java.awt.Color(59, 57, 57));
+        jTLogin.setForeground(new java.awt.Color(255, 255, 255));
+        jTLogin.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        jTLogin.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+        jTLogin.setMargin(new java.awt.Insets(10, 6, 2, 6));
+        jTLogin.setOpaque(true);
 
-        jTextField24.setBackground(new java.awt.Color(59, 57, 57));
-        jTextField24.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField24.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField24.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
-        jTextField24.addActionListener(new java.awt.event.ActionListener() {
+        jTSenha.setBackground(new java.awt.Color(59, 57, 57));
+        jTSenha.setForeground(new java.awt.Color(255, 255, 255));
+        jTSenha.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        jTSenha.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+        jTSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField24ActionPerformed(evt);
+                jTSenhaActionPerformed(evt);
             }
         });
 
@@ -139,8 +133,8 @@ public class LoginView extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(jPEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField21)
-                            .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jTLogin)
+                            .addComponent(jTSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(212, 212, 212))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
@@ -158,11 +152,11 @@ public class LoginView extends javax.swing.JFrame {
                 .addGap(59, 59, 59)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jPEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(151, 151, 151))
@@ -191,13 +185,13 @@ public class LoginView extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jLabel14MouseClicked
 
-    private void jTextField24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField24ActionPerformed
+    private void jTSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTSenhaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField24ActionPerformed
+    }//GEN-LAST:event_jTSenhaActionPerformed
 
     private void jLEntrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLEntrarMouseClicked
         LoginController loginController = new LoginController();
-        loginController.logar(this);
+        loginController.logar(this, jTLogin.getText(), jTSenha.getText());
     }//GEN-LAST:event_jLEntrarMouseClicked
 
 
@@ -210,7 +204,7 @@ public class LoginView extends javax.swing.JFrame {
     private javax.swing.JPanel jPEntrar;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField24;
+    private javax.swing.JTextField jTLogin;
+    private javax.swing.JTextField jTSenha;
     // End of variables declaration//GEN-END:variables
 }
