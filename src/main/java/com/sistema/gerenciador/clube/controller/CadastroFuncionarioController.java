@@ -4,6 +4,7 @@ import com.sistema.gerenciador.clube.entity.Usuario;
 import com.sistema.gerenciador.clube.model.CadastroFuncionarioModel;
 import com.sistema.gerenciador.clube.view.CadastroFuncionarioView;
 import com.sistema.gerenciador.clube.view.ListaAssociadoView;
+import com.sistema.gerenciador.clube.view.ListaFuncionarioView;
 
 /**
  *
@@ -25,7 +26,7 @@ public class CadastroFuncionarioController {
         oldScreen.setVisible(false);
         oldScreen = null;
 
-        ListaAssociadoView newScreen = new ListaAssociadoView();
+        ListaFuncionarioView newScreen = new ListaFuncionarioView();
         newScreen.setVisible(true);
     }
 }
