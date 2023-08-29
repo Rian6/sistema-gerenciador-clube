@@ -119,6 +119,11 @@ public class MenuView extends javax.swing.JFrame {
         jLabel3.setText("Perfil");
         jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel3.setIconTextGap(20);
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -254,6 +259,10 @@ public class MenuView extends javax.swing.JFrame {
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
         menuController.navegarListaFuncionarios(this);
     }//GEN-LAST:event_jLabel7MouseClicked
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        menuController.navegarCadastroFuncionario(this);
+    }//GEN-LAST:event_jLabel3MouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -247,6 +247,9 @@
                 </Property>
                 <Property name="iconTextGap" type="int" value="20"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel3MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
