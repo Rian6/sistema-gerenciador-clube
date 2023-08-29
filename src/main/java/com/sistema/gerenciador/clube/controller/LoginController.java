@@ -18,7 +18,10 @@ public class LoginController {
         
         Usuario usuario = loginModel.getLogin(login, senha);
         
-        if(usuario != null && usuario.getId() != null && usuario.getId() != 0){
+        navegarMenu(oldScreen);
+        
+        /*
+        if(usuario != null && usuario.getId() != null && usuario.getId() != 0){;
             UsuarioLogado.id = usuario.getId();
             UsuarioLogado.login = usuario.getLogin();
             UsuarioLogado.nome = usuario.getNome();
@@ -27,6 +30,7 @@ public class LoginController {
         } else {
             JOptionPane.showMessageDialog(null, "Senha ou Login incorreto(s)");
         }
+*/
     }
 
     private MenuView navegarMenu(LoginView oldScreen) {

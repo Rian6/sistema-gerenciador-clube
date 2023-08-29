@@ -30,8 +30,13 @@ public class Conector {
         sb.append("CREATE TABLE IF NOT EXISTS USUARIO( \n");
         sb.append("ID INTEGER PRIMARY KEY AUTOINCREMENT, \n");
         sb.append("NOME VARCHAR, \n");
+        sb.append("ENDERECO VARCHAR, \n");
         sb.append("LOGIN VARCHAR, \n");
-        sb.append("SENHA VARCHAR); \n");
+        sb.append("SENHA VARCHAR, \n");
+        sb.append("TELEFONE VARCHAR, \n");
+        sb.append("EMAIL VARCHAR, \n");
+        sb.append("CARGO VARCHAR, \n");
+        sb.append("SALARIO DOUBLE); \n");
         builders.add(sb);
 
         for (StringBuilder builder : builders) {
