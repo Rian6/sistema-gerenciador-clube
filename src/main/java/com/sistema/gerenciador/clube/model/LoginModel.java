@@ -16,7 +16,7 @@ import java.sql.SQLException;
  * @author rian_
  */
 public class LoginModel extends Conector{
-        public Usuario getLogin(String login, String senha){
+    public Usuario getLogin(String login, String senha){
         Usuario usuario = new Usuario();
 
         try ( Connection connection = connect()) {

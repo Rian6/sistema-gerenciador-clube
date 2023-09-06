@@ -35,11 +35,11 @@ public class LoginView extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
-        jTLogin = new javax.swing.JTextField();
-        jTSenha = new javax.swing.JTextField();
+        entradaLoginTelaLogin = new javax.swing.JTextField();
+        entradaSenhaTelaLogin = new javax.swing.JTextField();
         jPEntrar = new javax.swing.JPanel();
-        jLEntrar = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        botaoEntrarTelaLogin = new javax.swing.JLabel();
+        botaoFecharTelaLogin = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(javax.swing.UIManager.getDefaults().getColor("Button.background"));
@@ -65,35 +65,35 @@ public class LoginView extends javax.swing.JFrame {
         jSeparator2.setToolTipText("");
         jSeparator2.setFont(new java.awt.Font("Segoe UI", 0, 3)); // NOI18N
 
-        jTLogin.setBackground(new java.awt.Color(59, 57, 57));
-        jTLogin.setForeground(new java.awt.Color(255, 255, 255));
-        jTLogin.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTLogin.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
-        jTLogin.setMargin(new java.awt.Insets(10, 6, 2, 6));
-        jTLogin.setOpaque(true);
+        entradaLoginTelaLogin.setBackground(new java.awt.Color(59, 57, 57));
+        entradaLoginTelaLogin.setForeground(new java.awt.Color(255, 255, 255));
+        entradaLoginTelaLogin.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        entradaLoginTelaLogin.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+        entradaLoginTelaLogin.setMargin(new java.awt.Insets(10, 6, 2, 6));
+        entradaLoginTelaLogin.setOpaque(true);
 
-        jTSenha.setBackground(new java.awt.Color(59, 57, 57));
-        jTSenha.setForeground(new java.awt.Color(255, 255, 255));
-        jTSenha.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTSenha.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
-        jTSenha.addActionListener(new java.awt.event.ActionListener() {
+        entradaSenhaTelaLogin.setBackground(new java.awt.Color(59, 57, 57));
+        entradaSenhaTelaLogin.setForeground(new java.awt.Color(255, 255, 255));
+        entradaSenhaTelaLogin.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        entradaSenhaTelaLogin.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+        entradaSenhaTelaLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTSenhaActionPerformed(evt);
+                entradaSenhaTelaLoginActionPerformed(evt);
             }
         });
 
         jPEntrar.setBackground(new java.awt.Color(0, 74, 119));
 
-        jLEntrar.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jLEntrar.setForeground(new java.awt.Color(255, 255, 255));
-        jLEntrar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLEntrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sistema/gerenciador/clube/assets/icone-login.png"))); // NOI18N
-        jLEntrar.setText("Entrar");
-        jLEntrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jLEntrar.setIconTextGap(10);
-        jLEntrar.addMouseListener(new java.awt.event.MouseAdapter() {
+        botaoEntrarTelaLogin.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        botaoEntrarTelaLogin.setForeground(new java.awt.Color(255, 255, 255));
+        botaoEntrarTelaLogin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        botaoEntrarTelaLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sistema/gerenciador/clube/assets/icone-login.png"))); // NOI18N
+        botaoEntrarTelaLogin.setText("Entrar");
+        botaoEntrarTelaLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        botaoEntrarTelaLogin.setIconTextGap(10);
+        botaoEntrarTelaLogin.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLEntrarMouseClicked(evt);
+                botaoEntrarTelaLoginMouseClicked(evt);
             }
         });
 
@@ -101,18 +101,18 @@ public class LoginView extends javax.swing.JFrame {
         jPEntrar.setLayout(jPEntrarLayout);
         jPEntrarLayout.setHorizontalGroup(
             jPEntrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLEntrar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE)
+            .addComponent(botaoEntrarTelaLogin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE)
         );
         jPEntrarLayout.setVerticalGroup(
             jPEntrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLEntrar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+            .addComponent(botaoEntrarTelaLogin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
         );
 
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sistema/gerenciador/clube/assets/icone-close.png"))); // NOI18N
-        jLabel14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
+        botaoFecharTelaLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sistema/gerenciador/clube/assets/icone-close.png"))); // NOI18N
+        botaoFecharTelaLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        botaoFecharTelaLogin.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel14MouseClicked(evt);
+                botaoFecharTelaLoginMouseClicked(evt);
             }
         });
 
@@ -122,7 +122,7 @@ public class LoginView extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel14)
+                .addComponent(botaoFecharTelaLogin)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(0, 224, Short.MAX_VALUE)
@@ -133,8 +133,8 @@ public class LoginView extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(jPEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTLogin)
-                            .addComponent(jTSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(entradaLoginTelaLogin)
+                            .addComponent(entradaSenhaTelaLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(212, 212, 212))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
@@ -146,17 +146,17 @@ public class LoginView extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(botaoFecharTelaLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addGap(59, 59, 59)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(entradaLoginTelaLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(entradaSenhaTelaLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jPEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(151, 151, 151))
@@ -181,30 +181,30 @@ public class LoginView extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
+    private void botaoFecharTelaLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoFecharTelaLoginMouseClicked
         System.exit(0);
-    }//GEN-LAST:event_jLabel14MouseClicked
+    }//GEN-LAST:event_botaoFecharTelaLoginMouseClicked
 
-    private void jTSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTSenhaActionPerformed
+    private void entradaSenhaTelaLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entradaSenhaTelaLoginActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTSenhaActionPerformed
+    }//GEN-LAST:event_entradaSenhaTelaLoginActionPerformed
 
-    private void jLEntrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLEntrarMouseClicked
+    private void botaoEntrarTelaLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoEntrarTelaLoginMouseClicked
         LoginController loginController = new LoginController();
-        loginController.logar(this, jTLogin.getText(), jTSenha.getText());
-    }//GEN-LAST:event_jLEntrarMouseClicked
+        loginController.logar(this, entradaLoginTelaLogin.getText(), entradaSenhaTelaLogin.getText());
+    }//GEN-LAST:event_botaoEntrarTelaLoginMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLEntrar;
-    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel botaoEntrarTelaLogin;
+    private javax.swing.JLabel botaoFecharTelaLogin;
+    private javax.swing.JTextField entradaLoginTelaLogin;
+    private javax.swing.JTextField entradaSenhaTelaLogin;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPEntrar;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JTextField jTLogin;
-    private javax.swing.JTextField jTSenha;
     // End of variables declaration//GEN-END:variables
 }
