@@ -12,10 +12,11 @@ public class Associado {
 
     private Long id;
     private String nome;
-    private String endereco;
     private String telefone;
+    private String uf;
+    private String cidade;
+    private String endereco;
     private String email;
-    private String cpf;
     private Integer dependentes;
     private String tipoPagamento;
     
@@ -59,12 +60,12 @@ public class Associado {
         this.email = email;
     }
 
-    public String getCpf() {
-        return cpf;
+    public String getUF() {
+        return uf;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public void setUF(String uf) {
+        this.uf = uf;
     }
 
     public Integer getDependentes() {
