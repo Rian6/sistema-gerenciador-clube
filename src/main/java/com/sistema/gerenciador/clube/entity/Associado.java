@@ -13,6 +13,7 @@ public class Associado {
     private Long id;
     private String nome;
     private String telefone;
+    private String cpf;
     private String uf;
     private String cidade;
     private String endereco;
@@ -83,4 +84,29 @@ public class Associado {
     public void setTipoPagamento(String tipoPagamento) {
         this.tipoPagamento = tipoPagamento;
     }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getUf() {
+        return uf;
+    }
+
+    public void setUf(String uf) {
+        this.uf = uf;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+    
 }

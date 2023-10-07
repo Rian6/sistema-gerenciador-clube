@@ -25,8 +25,6 @@ public class CadastroAssociadoView extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         jPanel2 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
@@ -70,14 +68,6 @@ public class CadastroAssociadoView extends javax.swing.JFrame {
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
-
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Cidade");
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("UF");
 
         jSeparator2.setForeground(new java.awt.Color(102, 102, 102));
         jSeparator2.setToolTipText("");
@@ -163,13 +153,13 @@ public class CadastroAssociadoView extends javax.swing.JFrame {
         jLabelTelefone.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabelTelefone.setForeground(new java.awt.Color(255, 255, 255));
         jLabelTelefone.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jLabelTelefone.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+        jLabelTelefone.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
         JLabelNome.setBackground(new java.awt.Color(59, 57, 57));
         JLabelNome.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         JLabelNome.setForeground(new java.awt.Color(255, 255, 255));
         JLabelNome.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        JLabelNome.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+        JLabelNome.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         JLabelNome.setMargin(new java.awt.Insets(10, 6, 2, 6));
         JLabelNome.setOpaque(true);
 
@@ -177,19 +167,19 @@ public class CadastroAssociadoView extends javax.swing.JFrame {
         jLabelCidade.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabelCidade.setForeground(new java.awt.Color(255, 255, 255));
         jLabelCidade.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jLabelCidade.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+        jLabelCidade.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
         jLabelNumero.setBackground(new java.awt.Color(59, 57, 57));
         jLabelNumero.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabelNumero.setForeground(new java.awt.Color(255, 255, 255));
         jLabelNumero.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jLabelNumero.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+        jLabelNumero.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
         jLabelTipoDePagamento.setBackground(new java.awt.Color(59, 57, 57));
         jLabelTipoDePagamento.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabelTipoDePagamento.setForeground(new java.awt.Color(255, 255, 255));
         jLabelTipoDePagamento.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jLabelTipoDePagamento.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+        jLabelTipoDePagamento.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
         jPanel4.setBackground(new java.awt.Color(0, 74, 119));
 
@@ -255,7 +245,7 @@ public class CadastroAssociadoView extends javax.swing.JFrame {
         jLabelModoDePagamento.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabelModoDePagamento.setForeground(new java.awt.Color(255, 255, 255));
         jLabelModoDePagamento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "DINHEIRO", "CARTÃO", "BOLETO" }));
-        jLabelModoDePagamento.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(51, 51, 51), null));
+        jLabelModoDePagamento.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jLabelModoDePagamento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jLabelModoDePagamentoActionPerformed(evt);
@@ -270,7 +260,7 @@ public class CadastroAssociadoView extends javax.swing.JFrame {
         jLabelUF.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabelUF.setForeground(new java.awt.Color(255, 255, 255));
         jLabelUF.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "PR", "SC", "RS", "SP", "RJ", "MG", "ES", "RO", "AC", "AM", "RR", "PA", "AP", "TO", "MA", "PI", "CE", "RN", "PB", "PE", "AL", "SE", "BA" }));
-        jLabelUF.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(51, 51, 51), null));
+        jLabelUF.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jLabelUF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jLabelUFActionPerformed(evt);
@@ -285,7 +275,7 @@ public class CadastroAssociadoView extends javax.swing.JFrame {
         jLabelEndereco.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabelEndereco.setForeground(new java.awt.Color(255, 255, 255));
         jLabelEndereco.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jLabelEndereco.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+        jLabelEndereco.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
         jLabel28.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(255, 255, 255));
@@ -295,14 +285,14 @@ public class CadastroAssociadoView extends javax.swing.JFrame {
         jLabelDependentes.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabelDependentes.setForeground(new java.awt.Color(255, 255, 255));
         jLabelDependentes.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jLabelDependentes.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+        jLabelDependentes.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
         jLabelQntdeDeDep.setBackground(new java.awt.Color(59, 57, 57));
         jLabelQntdeDeDep.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabelQntdeDeDep.setForeground(new java.awt.Color(255, 255, 255));
         jLabelQntdeDeDep.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7" }));
         jLabelQntdeDeDep.setSelectedIndex(1);
-        jLabelQntdeDeDep.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(51, 51, 51), null));
+        jLabelQntdeDeDep.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jLabelQntdeDeDep.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jLabelQntdeDeDepActionPerformed(evt);
@@ -407,9 +397,9 @@ public class CadastroAssociadoView extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 9, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel16)
-                    .addComponent(jLabel15))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel16, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -426,7 +416,6 @@ public class CadastroAssociadoView extends javax.swing.JFrame {
                     .addComponent(jLabelCidade, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelNumero, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(27, 27, 27)
@@ -462,16 +451,8 @@ public class CadastroAssociadoView extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addGap(74, 74, 74)
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 637, Short.MAX_VALUE)))
+                .addGap(0, 701, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(10, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
@@ -489,11 +470,7 @@ public class CadastroAssociadoView extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(158, 158, 158)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel4))
-                .addContainerGap(504, Short.MAX_VALUE))
+                .addContainerGap(683, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -583,8 +560,6 @@ public class CadastroAssociadoView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField jLabelCidade;
     private javax.swing.JTextField jLabelDependentes;
